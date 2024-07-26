@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             outputDiv.innerHTML = '';
             return '';
         }
-        ver: 'webcore 1.0.0\nCodename: Ride the Lightning\nGPL3 Licensed\nDevelopment Start (webcore): Fri 26th July\n';
+        ver: 'webcore 0.1.0\nCodename: Ride the Lightning\nGPL v3 Licensed\nDevelopment Start (webcore): Fri 26th July\n';
     };
 
     commandInput.addEventListener('keydown', (event) => {
