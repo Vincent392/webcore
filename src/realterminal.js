@@ -14,13 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     commandInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-            const inputText = commandInput.value.trim();
-            if (inputText) {
-                processCommand(inputText);
-            }
-            commandInput.value = '';
+            processInput();
         }
     });
+
+    commandInput.addEventListener('blur', () => {
+        setTimeout(() => commandInput.focus(), 0); // Ensure the input stays in focus
+    });
+
+    function processInput() {
+        const inputText = commandInput.value.trim();
+        if (inputText) {
+            processCommand(inputText);
+        }
+        commandInput.value = '';
+    }
 
     function processCommand(input) {
         const parts = input.split(' ');
@@ -50,4 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         outputDiv.scrollTop = outputDiv.scrollHeight;
     }
+
+    // Ensure the input is focused when the page loads
+    commandInput.focus();
 });
