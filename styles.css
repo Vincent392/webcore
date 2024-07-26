@@ -1,0 +1,44 @@
+body {
+    font-family: monospace;
+    background-color: #000;
+    color: #0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.command-prompt {
+    width: 80%;
+    max-width: 800px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0f0;
+}
+
+#output {
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 5px;
+}
+
+#command-input {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #0f0;
+    outline: none;
+}
