@@ -12,7 +12,6 @@ body {
 
 .command-prompt {
     width: 80%;
-    max-width: 800px;
     background-color: #222;
     padding: 10px;
     border-radius: 5px;
@@ -20,8 +19,6 @@ body {
 }
 
 #output {
-    min-height: 300px;
-    max-height: 300px;
     overflow-y: auto;
     margin-bottom: 10px;
 }
