@@ -5,27 +5,21 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     height: 100vh;
 }
 
-.command-prompt {
-    width: 80%;
-    background-color: #222;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #0f0;
-}
-
 #output {
+    flex: 1;
     overflow-y: auto;
-    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .input-line {
     display: flex;
     align-items: center;
+    padding: 10px;
+    border-top: 1px solid #0f0;
 }
 
 .prompt {
